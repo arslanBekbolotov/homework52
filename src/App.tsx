@@ -4,6 +4,7 @@ import './App.css';
 import CardView from "./components/CardView/CardView";
 import CardDesk from "./lib/CardDesk";
 import Card from "./lib/Card";
+import PokerHand from "./lib/PokerHand"
 
 const cardDesk = new CardDesk();
 
@@ -29,11 +30,14 @@ const App = () => {
         return <p style={{textAlign:'center'}}>Карт не осталось</p>
     }
 
+    const pokerHand = new PokerHand(cards);
+    const combination = pokerHand.getOutcome();
 
     return (
         <div className="App">
             <div className="playingCards faceImages">
                 <div>
+                    <p>{combination}</p>
                 </div>
                 <div className="cardsContent">
                     {cards.map((card:Card,index) => (
