@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+
+.cardsContent{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.firstBtn, .secondBtn{
+  display: block;
+  margin:50px auto 0 auto;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  border-radius: 15px;
+  background: #666666;
+  color:#fff;
+}
